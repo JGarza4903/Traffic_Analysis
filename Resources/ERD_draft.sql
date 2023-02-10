@@ -1,6 +1,6 @@
 CREATE TABLE Clark_Co_Traffic (
-   X FLOAT,
-    Y FLOAT, 
+   X DECIMAL,
+    Y DECIMAL, 
     OBJECTID INT PRIMARY KEY UNIQUE,
     Crash_Severity VARCHAR(100),
     County VARCHAR(100),
