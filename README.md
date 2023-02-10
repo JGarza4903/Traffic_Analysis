@@ -14,9 +14,9 @@ Car crashes are a cause of major concern. On average, 1.35 million people annual
 
 Using the techniques we have learned throughout the program we are identifying which data categories are most likely to be important for our analysis. By removing columns that are too general to to provide valuable insight we are focusing on the data that will help us build a compelling story, a strong machine learning base, and to create interesting visuals. Eliminating null values by either adding an 'unknown' value to columns that might have some missing data allows us to use the remaining, important data in the column, and by removing rows that contain too many null values we can make sure we are using strong and reliable data to build our model.
 
-Our [Cleaned data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Resources/cleaned_traffic_data_nick.csv)
+Our [Cleaned data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Analysis/cleaned_traffic_data.csv)
 
-Our [Population data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Resources/NV_county_population.csv)
+Our [Population data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Analysis/Nevada_population_clean_1.csv)
 
 - How can data analytics help reduce car crashes?
 - What are the key factors that are common between high risk areas?
