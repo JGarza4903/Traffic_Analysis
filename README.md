@@ -28,7 +28,7 @@ We are using google meet to have in person discussions outside of class time, a 
 
 ## Database Mockup
 
-(https://github.com/JGarza4903/Traffic_Analysis/blob/main/Images/QuickDBD-export.png)
+![ERD](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Images/QuickDBD-export.png)
 
 ## Machine Learning Mockup
 
