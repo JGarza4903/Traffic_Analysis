@@ -8,7 +8,7 @@ Car crashes are a cause of major concern. On average, 1.35 million people annual
 
 - Using [data obtained from NDOT](https://geohub-ndot.hub.arcgis.com/datasets/NDOT::crashdata-opendata/explore?location=38.279511%2C-116.977900%2C7.00&showTable=tr) (Nevada Department of Transportation) and the Las Vegas Police Department, we have identified a data source with 200k+ entries with 50+ potential data points each. This gives us a broad spectrum of information with which to create a compelling story about when and where crashes occur, but also to train our machine learning component with sufficient data to create a strong model for identifying risk factors and making predictions about where accidents might occur in the future.
 - The original data set is stored as a .csv [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Resources/CrashData_OpenData.csv)
-- We plan to compare the crash data with the population data of the counties, we found [county data inforamtion](https://www.census.gov/programs-surveys/popest/technical-documentation/research/evaluation-estimates/2020-evaluation-estimates/2010s-counties-total.htm) from census.gov
+- We plan to compare the crash data with the population data of the counties, we found [county data information](https://www.census.gov/programs-surveys/popest/technical-documentation/research/evaluation-estimates/2020-evaluation-estimates/2010s-counties-total.htm) from census.gov
 
 ### Data Cleanup
 
@@ -32,7 +32,7 @@ TBD
 ## Machine Learning Mockup
 
 Using a supervised learning models and we will evaluate which areas are more likely to have crashes occur based on previous frequency of crashes, time of day, types of vehicles are involved, and the severity of injuries that occured we will be able to train our model to identify the highest risk areas and factors.
-We have an outline of the ML process documkented [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_model_description.md)
+We have an outline of the ML process documented [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_model_description.md)
 and we have started coding the [model](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_learning_model.ipynb) here.
 
 ## Conclusion
