@@ -16,7 +16,7 @@ Using the techniques we have learned throughout the program we are identifying w
 
 Our [Cleaned data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Analysis/cleaned_traffic_data.csv)
 
-Our [Population data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Resources/NV_county_population.csv)
+Our [Population data](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Analysis/Nevada_population_clean_1.csv)
 
 - How can data analytics help reduce car crashes?
 - What are the key factors that are common between high risk areas?
