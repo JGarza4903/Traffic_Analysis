@@ -1,15 +1,13 @@
 CREATE TABLE Clark_Co_Traffic (
     X FLOAT,
     Y FLOAT,
-    OBJECTID INT UNIQUE,
+    OBJECTID INT PRIMARY KEY UNIQUE,
     Crash_Severity VARCHAR(100),
     County VARCHAR(100),
     Crash_Date DATE,
     Crash_Year INT,
     Crash_Time VARCHAR(100),
-    Primary_Street VARCHAR(100),
     Dir VARCHAR(100),
-    Secondary_Street VARCHAR(100),
     Weather VARCHAR(100),
     Fatalities INT,
     Injured INT,
@@ -18,9 +16,7 @@ CREATE TABLE Clark_Co_Traffic (
     Crash_Type VARCHAR(100),
     Total_Vehicles INT,
     V1_Type VARCHAR(100),
-    V1_Dir VARCHAR(100),
     V1_Driver_Age INT,
-    V1_Lane_Num INT,
     V1_Action VARCHAR(100),
     V1_Driver_Factors VARCHAR(100),
     V1_Driver_Distracted VARCHAR(100),
@@ -28,7 +24,6 @@ CREATE TABLE Clark_Co_Traffic (
     V1_Most_Harmful_Event VARCHAR(100),
     V1_All_Events VARCHAR(100),
     V2_Type VARCHAR(100),
-    V2_Dir VARCHAR(100),
     V2_Driver_Age INT,
     V2_Lane_Num INT,
     V2_Action VARCHAR(100),
@@ -37,7 +32,6 @@ CREATE TABLE Clark_Co_Traffic (
     V2_Vehicle_Factors VARCHAR(100),
     V2_Most_Harmful_Event VARCHAR(100),
     V2_All_Events VARCHAR(100),
-    First_Harmful_Event VARCHAR(100),
     Nonmotorist_Factors VARCHAR(100),
     Factors_Roadway VARCHAR(100),
     Lighting VARCHAR(100),
@@ -51,6 +45,11 @@ CREATE TABLE Clark_Co_Traffic (
 );
 
 CREATE TABLE County_Population (
-    County VARCHAR(100) UNIQUE,
-    Population INT,
+    County VARCHAR(100) PRIMARY KEY UNIQUE,
+    Population_2015 INT,
+    Population_2016 INT,
+	Population_2017 INT,
+	Population_2018 INT,
+	Population_2019 INT,
+	Population_2020 INT
 );
