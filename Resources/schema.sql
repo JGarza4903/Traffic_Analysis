@@ -1,5 +1,5 @@
 CREATE TABLE Clark_Co_Traffic (
-   X DECIMAL,
+    X DECIMAL,
     Y DECIMAL, 
     OBJECTID INT PRIMARY KEY UNIQUE,
     Crash_Severity VARCHAR(100),
@@ -7,6 +7,8 @@ CREATE TABLE Clark_Co_Traffic (
     Crash_Date DATE,
     Crash_Year INT,
     Crash_Time VARCHAR(100),
+    Primary_Street VARCHAR(100),
+    Secondary_Street VARCHAR(100),
     Weather VARCHAR(100),
     Fatalities INT,
     Injured INT,
@@ -42,6 +44,7 @@ CREATE TABLE Clark_Co_Traffic (
 );
 
 CREATE TABLE County_Population (
+    ID INT,
     County VARCHAR(100) PRIMARY KEY UNIQUE,
     Population_2015 INT,
     Population_2016 INT,
