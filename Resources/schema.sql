@@ -7,6 +7,8 @@ CREATE TABLE Clark_Co_Traffic (
     Crash_Date DATE,
     Crash_Year INT,
     Crash_Time VARCHAR(100),
+    Primary_Street VARCHAR(100),
+    Secondary_Street VARCHAR(100),
     Weather VARCHAR(100),
     Fatalities INT,
     Injured INT,
