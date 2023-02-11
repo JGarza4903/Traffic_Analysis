@@ -42,6 +42,7 @@ CREATE TABLE Clark_Co_Traffic (
 );
 
 CREATE TABLE County_Population (
+    ID INT,
     County VARCHAR(100) PRIMARY KEY UNIQUE,
     Population_2015 INT,
     Population_2016 INT,
