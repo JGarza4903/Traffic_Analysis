@@ -1,0 +1,2 @@
+# ignore login info for database
+secret.py
