@@ -1,2 +1,6 @@
 # ignore login info for database
 secret.py
+
+# ignore all checkpoints
+*-checkpoint.ipynb
+/Transformations/.ipynb_checkpoints
