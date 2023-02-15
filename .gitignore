@@ -3,4 +3,7 @@ secret.py
 
 # ignore all checkpoints
 *-checkpoint.ipynb
-/Transformations/.ipynb_checkpoints
+/Transformations/.ipynb_checkpoints/*
+/Analysis/.ipynb_checkpoints/*
+.ipynb_checkpoints/*
+__pycache__/*
