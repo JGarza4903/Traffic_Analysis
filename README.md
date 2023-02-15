@@ -32,7 +32,11 @@ We are using google meet to have in person discussions outside of class time, a 
 
 ## Machine Learning Mockup
 
+<<<<<<< HEAD
+Using a supervised learning models focusing on Random Forest Classifier we will evaluate which areas are more likely to have crashes occur based on previous frequency of crashes, time of day, types of vehicles are involved, and the severity of injuries that occured we will be able to train our model to identify the highest risk areas and factors.
+=======
 Using a supervised learning models focusing on Random Forest Classifier, we will evaluate which areas are more likely to have crashes occur based on previous frequency of crashes, time of day, types of vehicles are involved, and the severity of injuries that occured we will be able to train our model to identify the highest risk areas and factors.
+>>>>>>> e196222a2a1f150c11f5347a95312b47de0d7d38
 We have an outline of the ML process documented [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_model_description.md)
 and we have started coding the [model](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_learning_model.ipynb) here.
 
