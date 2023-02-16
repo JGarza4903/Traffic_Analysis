@@ -45,6 +45,8 @@ We connected our database to our machine learning model using psycopg2, with dat
 
 We used Random Forest Classifier, a supervised learning model, to evaluate which areas are more likely to have crashes occur based on previous frequency of crashes, time of day, types of vehicles are involved, and the severity of injuries that occurred. Our goal was to train our model to identify the highest risk factors.
 
+The dataset included several columns that dealt with crash results. We decided to make the target of our analysis the "injury_type" column. To prevent overfitting, we removed columns on crash severity, the number of fatalities, and the number of injured people. Although the Nevada data dictionary specified that "property damage only" is a possible value in the "injury_type" column, our dataset had that information in a separate column. For crashes that recorded property damage only, we replaced the value in the "injury_type" column (recorded as "unknown") with "PDO", so that all crash results would be consolidated in one column.
+
 Our initial outline of the machine learning model is documented [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_model_description.md), while the the code for the model is [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/machine_learning_model.ipynb). 
 
 As of February 16, 2023, our model produced the following results:
