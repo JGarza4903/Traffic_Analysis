@@ -12,7 +12,7 @@ Our initial questions consisted of the following:
 
 ## Analysis
 
-- Using [data obtained from NDOT](https://geohub-ndot.hub.arcgis.com/datasets/NDOT::crashdata-opendata/explore?location=38.279511%2C-116.977900%2C7.00&showTable=tr) (Nevada Department of Transportation) and the Las Vegas Police Department, we have identified a data source with 200k+ entries with 50+ potential data points each. This gives us a broad spectrum of information with which to create a compelling story about when and where crashes occur, but also to train our machine learning component with sufficient data to create a strong model for identifying risk factors and making predictions about where accidents might occur in the future.
+- Using [data obtained from NDOT](https://geohub-ndot.hub.arcgis.com/datasets/NDOT::crashdata-opendata/explore?location=38.279511%2C-116.977900%2C7.00&showTable=tr) (Nevada Department of Transportation) and the Las Vegas Police Department, we have identified a data source with 200k+ entries with 50+ potential data points each. This gives us a broad spectrum of information with which to create a compelling story about when and where crashes occur, but also to train our machine learning component with sufficient data to create a strong model for identifying risk factors and making predictions about where crashes might occur in the future.
 
 - The original data set is stored as a .csv [here](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Resources/CrashData_OpenData.csv)
 - The Nevada Traffic Records Commission [data dictionary](https://zerofatalitiesnv.com/app/uploads/2021/04/2021-01-NV-TRCC-Data-Dictionary.pdf) explained the meaning of each column.
@@ -43,7 +43,7 @@ We imported that [schema](https://github.com/JGarza4903/Traffic_Analysis/blob/ma
 
 We connected our database to our machine learning model using psycopg2, with database login information stored in each user's secret.py file.
 
-We used Random Forest Classifier, a supervised learning model, to evaluate which areas are more likely to have crashes occur based on previous frequency of crashes, time of day, types of vehicles are involved, and the severity of injuries that occurred. Our goal was to train our model to identify the highest risk factors.
+We used Random Forest Classifier, a supervised learning model, to evaluate which areas are more likely to have crashes occur based on previous frequency of crashes, time of day, types of vehicles are involved, and the severity of injuries that occurred. Our goal was to train our model to identify the highest risk factors. We removed columns that were extraneous (unique identifiers and street names)
 
 The dataset included several columns that dealt with crash results. We decided to make the target of our analysis the "injury_type" column. To prevent overfitting, we removed columns on crash severity, the number of fatalities, and the number of injured people. Although the Nevada data dictionary specified that "property damage only" is a possible value in the "injury_type" column, our dataset had that information in a separate column. For crashes that recorded property damage only, we replaced the value in the "injury_type" column (recorded as "unknown") with "PDO", so that all crash results would be consolidated in one column.
 
