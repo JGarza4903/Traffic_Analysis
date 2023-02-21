@@ -1,0 +1,10 @@
+﻿Measure,Scope,Target,Number of Features,Property Damage Only ,Injury Crash,Fatal Crash
+Precision,Statewide,Crash Severity,1345,0.77,0.70,0.71
+Precision,Statewide,Crash Severity,773,0.76,0.70,0.60
+Precision,Clark,Crash Severity,1345,0.77,0.71,0.43
+Recall / Sensitivity,Statewide,Crash Severity,1345,0.79,0.68,0.06
+Recall / Sensitivity,Statewide,Crash Severity,773,0.78,0.68,0.04
+Recall / Sensitivity,Clark,Crash Severity,1345,0.75,0.74,0.03
+f-1 Score,Statewide,Crash Severity,1345,0.78,0.69,0.10
+f-1 Score,Statewide,Crash Severity,773,0.77,0.69,0.08
+f-1 Score,Clark,Crash Severity,1345,0.76,0.72,0.06
