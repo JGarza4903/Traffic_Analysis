@@ -1171,18 +1171,18 @@
   <actions>
     <action caption='Filter 1 (generated)' name='[Action1_0E30B9DD4FFF475D83BEB09E5D16DAE1]'>
       <activation auto-clear='true' type='on-select' />
-      <source dashboard='Dashboard 6' type='sheet' worksheet='# of Crashes' />
+      <source dashboard='Dashboard Joe' type='sheet' worksheet='# of Crashes' />
       <command command='tsc:tsl-filter'>
         <param name='special-fields' value='all' />
-        <param name='target' value='Dashboard 6' />
+        <param name='target' value='Dashboard Joe' />
       </command>
     </action>
     <action caption='Highlight 1 (generated)' name='[Action2_13B9C2F980234A2581CADAF99CC7268F]'>
       <activation auto-clear='true' type='on-select' />
-      <source dashboard='Dashboard 6' type='sheet' />
+      <source dashboard='Dashboard Joe' type='sheet' />
       <command command='tsc:brush'>
         <param name='field-captions' value='Measure Names' />
-        <param name='target' value='Dashboard 6' />
+        <param name='target' value='Dashboard Joe' />
       </command>
     </action>
   </actions>
@@ -2587,7 +2587,7 @@
             <column-instance column='[Calculation_649362836313513984]' derivation='User' name='[usr:Calculation_649362836313513984:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]'>
-            <groupfilter function='level-members' level='[none:Crash_Year:ok]' user:ui-action-filter='[Action1_0E30B9DD4FFF475D83BEB09E5D16DAE1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Crash_Year:ok]' member='2017' user:ui-action-filter='[Action1_0E30B9DD4FFF475D83BEB09E5D16DAE1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='quantitative' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' included-values='in-range'>
             <min>15</min>
@@ -3632,6 +3632,10 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='-12551748.916617101' min='-13080898.671237858' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4460090.424861243' min='4161058.3344516722' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='map-layer'>
             <format attr='enabled' id='b01002_001e' value='false' />
             <format attr='enabled' id='b01002_002e' value='false' />
@@ -3960,26 +3964,6 @@
         <cols />
       </table>
       <simple-id uuid='{8B6C7D65-E919-4ADC-B599-59521A48657E}' />
-    </worksheet>
-    <worksheet name='Questions'>
-      <table>
-        <view>
-          <datasources />
-          <aggregation value='true' />
-        </view>
-        <style />
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-          </pane>
-        </panes>
-        <rows />
-        <cols />
-      </table>
-      <simple-id uuid='{82EEDB86-DBB4-4EAD-A7B4-79105BD0BCCC}' />
     </worksheet>
     <worksheet name='Roadway Conditions'>
       <table>
@@ -4435,7 +4419,7 @@
             <column-instance column='[Calculation_649362836313513984]' derivation='User' name='[usr:Calculation_649362836313513984:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]'>
-            <groupfilter function='level-members' level='[none:Crash_Year:ok]' user:ui-action-filter='[Action1_0E30B9DD4FFF475D83BEB09E5D16DAE1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Crash_Year:ok]' member='2017' user:ui-action-filter='[Action1_0E30B9DD4FFF475D83BEB09E5D16DAE1]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]</column>
@@ -4889,8 +4873,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/Vegas_Traffic1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -4912,99 +4896,6 @@
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{5C323D85-76F7-466E-8258-F89314789492}' />
-    </dashboard>
-    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 6'>
-      <style />
-      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
-      <zones>
-        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
-            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
-              <zone h='58875' id='3' name='HeatMapJoe' w='82400' x='800' y='1000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='39125' id='11' name='# of Crashes' w='41200' x='800' y='59875'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='39125' id='13' name='Type of Crash' w='41200' x='42000' y='59875'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
-              <zone h='16875' id='8' name='HeatMapJoe' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type-v2='size' w='16000' x='83200' y='1000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='9125' id='9' name='HeatMapJoe' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type-v2='color' w='16000' x='83200' y='17875'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone count='1' h='14250' id='10' name='HeatMapJoe' name1='Type of Crash' synchronized='1' type-v2='currpage' w='16000' x='83200' y='27000'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='9000' id='12' name='# of Crashes' pane-specification-id='5' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type-v2='color' w='16000' x='83200' y='41250'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-            </zone>
-          </zone>
-          <zone-style>
-            <format attr='border-color' value='#000000' />
-            <format attr='border-style' value='none' />
-            <format attr='border-width' value='0' />
-            <format attr='margin' value='8' />
-          </zone-style>
-        </zone>
-      </zones>
-      <devicelayouts>
-        <devicelayout auto-generated='true' name='Phone'>
-          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
-          <zones>
-            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='8' />
-              </zone-style>
-            </zone>
-          </zones>
-        </devicelayout>
-      </devicelayouts>
-      <simple-id uuid='{3854C805-C2E0-4E62-A9AB-92FF335C9F56}' />
     </dashboard>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard Final'>
       <layout-options>
@@ -5177,8 +5068,8 @@
           </layout-options>
           <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='38' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone h='100000' id='43' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='42' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
                 <zone h='4444' id='7' type-v2='title' w='89000' x='500' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5188,7 +5079,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='5778' id='19' mode='compact' param='[Parameters].[Parameter 3]' type-v2='paramctrl' w='10000' x='89500' y='889'>
+                <zone h='6222' id='19' mode='compact' param='[Parameters].[Parameter 3]' type-v2='paramctrl' w='10000' x='89500' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5264,7 +5155,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='7222' id='28' name='Map Average by Location w/Filters broken' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type-v2='color' w='10000' x='89500' y='6667'>
+                <zone h='8111' id='28' name='Map Average by Location w/Filters broken' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type-v2='color' w='10000' x='89500' y='7111'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5273,7 +5164,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='14000' id='29' name='Map Average by Location w/Filters broken' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type-v2='size' w='10000' x='89500' y='13889'>
+                <zone h='15000' id='29' name='Map Average by Location w/Filters broken' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type-v2='size' w='10000' x='89500' y='15222'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5303,6 +5194,212 @@
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{67F9DD46-5D23-45C4-8796-013003C346BF}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard Joe'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='58875' id='3' name='HeatMapJoe' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39125' id='11' name='# of Crashes' w='41200' x='800' y='59875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39125' id='13' name='Type of Crash' w='41200' x='42000' y='59875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='14250' id='8' name='HeatMapJoe' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type-v2='size' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='9' name='HeatMapJoe' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type-v2='color' w='16000' x='83200' y='15250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone count='1' h='14875' id='10' name='HeatMapJoe' name1='Type of Crash' synchronized='1' type-v2='currpage' w='16000' x='83200' y='24375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9000' id='12' name='# of Crashes' pane-specification-id='5' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type-v2='color' w='16000' x='83200' y='39250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='58875' id='3' is-fixed='true' name='HeatMapJoe' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14250' id='8' name='HeatMapJoe' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type-v2='size' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='9' name='HeatMapJoe' pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type-v2='color' w='16000' x='83200' y='15250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39125' id='11' is-fixed='true' name='# of Crashes' w='41200' x='800' y='59875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='12' name='# of Crashes' pane-specification-id='5' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type-v2='color' w='16000' x='83200' y='39250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39125' id='13' is-fixed='true' name='Type of Crash' w='41200' x='42000' y='59875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone count='1' h='14875' id='10' name='HeatMapJoe' name1='Type of Crash' synchronized='1' type-v2='currpage' w='16000' x='83200' y='24375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3854C805-C2E0-4E62-A9AB-92FF335C9F56}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Questions Joe'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='' h='98000' id='3' param='https://docs.google.com/presentation/d/e/2PACX-1vS1768Bie97WeiH5g7Gf7nihMx0aIdzuRAcqsu3dcvM0fyU20_JxQ9q1SeoTTS_L0fHi3Nn-Go5ceUy/pub?start=true&amp;loop=false' type-v2='web' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' forceUpdate='' h='98000' id='3' is-fixed='true' param='https://docs.google.com/presentation/d/e/2PACX-1vS1768Bie97WeiH5g7Gf7nihMx0aIdzuRAcqsu3dcvM0fyU20_JxQ9q1SeoTTS_L0fHi3Nn-Go5ceUy/pub?start=true&amp;loop=false' type-v2='web' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F2B24A17-09E9-4E1C-920F-6751FE3FA8FE}' />
     </dashboard>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Real Vizzy'>
       <layout-options>
@@ -5375,9 +5472,9 @@
           </layout-options>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='22' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
-                <zone h='6000' id='9' type-v2='title' w='98400' x='800' y='1000'>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7250' id='9' type-v2='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5396,7 +5493,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='96' h='13017' id='16' is-fixed='true' name='Average Injuries per Year' w='30800' x='800' y='7000'>
+                <zone fixed-size='95' h='12840' id='16' is-fixed='true' name='Average Injuries per Year' w='30800' x='800' y='8250'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5405,7 +5502,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='96' h='13017' id='15' is-fixed='true' name='Average Collisions per Year' w='35000' x='31600' y='7000'>
+                <zone fixed-size='95' h='12840' id='15' is-fixed='true' name='Average Collisions per Year' w='35000' x='31600' y='8250'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5414,7 +5511,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='96' h='13017' id='17' is-fixed='true' name='Average Fatalities per Year' w='32600' x='66600' y='7000'>
+                <zone fixed-size='95' h='12840' id='17' is-fixed='true' name='Average Fatalities per Year' w='32600' x='66600' y='8250'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -5453,7 +5550,7 @@
             <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
             <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
             <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
-              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+              <flipboard active-id='9' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point caption='Welcome Page' captured-sheet='Welcome Page' id='5' />
                   <story-point caption='Vegas Baby! Yeah!' captured-sheet='What Happens in Vegas' id='6' />
@@ -5469,14 +5566,25 @@
                         </style>
                         <current-page>
                           <multibucket>
-                            <bucket>2017</bucket>
+                            <bucket>2020</bucket>
                           </multibucket>
                         </current-page>
                       </worksheet>
                     </capturedDeltas>
                   </story-point>
-                  <story-point caption='Questions' captured-sheet='' id='9' />
-                  <story-point caption='DashBoardJoe' captured-sheet='Dashboard 6' id='8' />
+                  <story-point caption='Questions' captured-sheet='Questions Joe' id='9' />
+                  <story-point caption='DashBoardJoe' captured-sheet='Dashboard Joe' id='8'>
+                    <capturedDeltas>
+                      <worksheet name='HeatMapJoe'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4345796.8807329489' min='4274406.6475835098' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='-12740629.840779031' min='-12881850.810610753' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
                 </story-points>
               </flipboard>
             </zone>
@@ -5516,8 +5624,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' forceUpdate='' h='98000' id='1' is-fixed='true' param='https://docs.google.com/presentation/d/e/2PACX-1vT3Rc-NDjeLnX_-fipbZXHjY4JcuYjmdwXWFBW6JBAmpV9dvwLssdwlPuxXF6hOyXgNAFg2lC09GHOA/pub?start=false&amp;loop=false' type-v2='web' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5565,8 +5673,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='25' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/The_Strip1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -5590,13 +5698,13 @@
       <simple-id uuid='{F69C4C42-E627-4505-B545-9019B8DBB8AF}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
-    <window class='dashboard' maximized='true' name='Story 1'>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' name='Story 1'>
       <viewpoints />
-      <active id='-1' />
+      <active id='5' />
       <simple-id uuid='{225DF3E7-DD4D-4BA3-B68D-59F15B571C4E}' />
     </window>
-    <window class='dashboard' name='Welcome Page'>
+    <window class='dashboard' maximized='true' name='Welcome Page'>
       <viewpoints />
       <active id='1' />
       <simple-id uuid='{34825A94-B46D-41F1-9D06-B9B8B9A9BBAA}' />
@@ -5611,33 +5719,10 @@
       <active id='-1' />
       <simple-id uuid='{92A614A3-86D9-4A12-BCB4-A5805ED20008}' />
     </window>
-    <window class='worksheet' name='Questions'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='31'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{312C108B-947F-4438-9B3A-F4E84D945823}' />
-    </window>
     <window class='worksheet' name='Type of Crash'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5650,12 +5735,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' type='color' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type='size' />
             <card type='currpage' />
@@ -5667,7 +5752,7 @@
     <window class='worksheet' name='# of Crashes'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5680,12 +5765,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='5' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type='color' />
           </strip>
         </edge>
@@ -5695,7 +5780,7 @@
     <window class='worksheet' name='HeatMapJoe'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5708,12 +5793,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='currpage' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type='size' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type='color' />
@@ -5723,14 +5808,19 @@
       <viewpoint>
         <current-page>
           <multibucket>
-            <bucket>2020</bucket>
+            <bucket>2018</bucket>
           </multibucket>
         </current-page>
         <default-map-tool-selection tool='1' />
       </viewpoint>
       <simple-id uuid='{FAE1A3EF-96F2-4E1D-A73F-546F0E87EDDC}' />
     </window>
-    <window class='dashboard' name='Dashboard 6'>
+    <window class='dashboard' name='Questions Joe'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{CDF034D4-6977-4E4C-902D-DEC5BDF46EB9}' />
+    </window>
+    <window class='dashboard' name='Dashboard Joe'>
       <viewpoints>
         <viewpoint name='# of Crashes'>
           <zoom type='entire-view' />
@@ -5751,13 +5841,13 @@
           </current-page>
         </viewpoint>
       </viewpoints>
-      <active id='10' />
+      <active id='-1' />
       <simple-id uuid='{01BA4FA7-8C4A-4D3F-BD75-F838E4FA24FC}' />
     </window>
     <window class='worksheet' name='Map'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5770,12 +5860,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' type='filter' />
             <card type='currpage' />
             <card pane-specification-id='1' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' type='color' />
@@ -5787,7 +5877,7 @@
     <window class='worksheet' name='Total Collisions'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5800,7 +5890,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5813,7 +5903,7 @@
     <window class='worksheet' name='Average Collisions per Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5826,7 +5916,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5839,7 +5929,7 @@
     <window class='worksheet' name='Property Damage Only'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5852,7 +5942,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5865,7 +5955,7 @@
     <window class='worksheet' name='Injuries'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5878,7 +5968,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5891,7 +5981,7 @@
     <window class='worksheet' name='Fatalities'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5904,7 +5994,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5917,7 +6007,7 @@
     <window class='worksheet' name='Pedalcyclist'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5930,7 +6020,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5943,7 +6033,7 @@
     <window class='worksheet' name='Motorcycle per Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5956,7 +6046,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5969,7 +6059,7 @@
     <window class='worksheet' name='Pedestrian'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -5982,7 +6072,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -5995,7 +6085,7 @@
     <window class='worksheet' name='Average Injuries per Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6008,7 +6098,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6021,7 +6111,7 @@
     <window class='worksheet' name='Average Fatalities per Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6034,7 +6124,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6047,7 +6137,7 @@
     <window class='worksheet' name='Top 10 Most Dangerous by Average'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6061,12 +6151,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type='color' />
           </strip>
         </edge>
@@ -6076,7 +6166,7 @@
     <window class='worksheet' name='Map Skelly'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6089,12 +6179,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' type='map' />
           </strip>
         </edge>
@@ -6104,7 +6194,7 @@
     <window class='worksheet' name='Map Average by Location'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6117,12 +6207,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type='color' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type='size' />
           </strip>
@@ -6136,7 +6226,7 @@
     <window class='worksheet' name='Map Average by Location Dashboard'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6149,12 +6239,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type='color' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type='size' />
             <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:AnimalType:nk]' show-apply='true' type='filter' />
@@ -6172,7 +6262,7 @@
     <window class='worksheet' name='Map Average by Location w/Filters broken'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6185,12 +6275,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' show-apply='true' type='filter' />
             <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Lighting filter]' show-apply='true' type='filter' />
             <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Injury Type minus unknown]' show-apply='true' type='filter' />
@@ -6208,7 +6298,7 @@
     <window class='worksheet' name='Diamond Map'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6221,12 +6311,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' type='color' />
             <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
           </strip>
@@ -6240,7 +6330,7 @@
     <window class='worksheet' name='Diamond Map Injured'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6253,12 +6343,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Injured:qk]' type='color' />
           </strip>
@@ -6272,7 +6362,7 @@
     <window class='worksheet' name='Diamond Map Fatalities'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6285,12 +6375,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]' type='color' />
           </strip>
@@ -6304,7 +6394,7 @@
     <window class='worksheet' name='Crash Type'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6317,7 +6407,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6327,7 +6417,7 @@
     <window class='worksheet' name='Weather Top 3 by Crash Type Top 3'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6340,12 +6430,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' type='color' />
           </strip>
         </edge>
@@ -6358,7 +6448,7 @@
     <window class='worksheet' name='Crash Volume by Hour'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6371,7 +6461,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6381,7 +6471,7 @@
     <window class='worksheet' name='Weekday Crash Line'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6394,7 +6484,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6407,7 +6497,7 @@
     <window class='worksheet' name='Weekday Crash Line by Crash Type'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6420,12 +6510,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Crash Type Set]' show-apply='true' type='filter' />
           </strip>
         </edge>
@@ -6438,7 +6528,7 @@
     <window class='worksheet' name='Monthly Crash Line'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6451,7 +6541,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6464,7 +6554,7 @@
     <window class='worksheet' name='Monthly Crash Line by Weather'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6477,12 +6567,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Weather Top 3]' show-apply='true' type='filter' />
           </strip>
         </edge>
@@ -6495,7 +6585,7 @@
     <window class='worksheet' name='Yearly Crash Line'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6508,7 +6598,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6521,7 +6611,7 @@
     <window class='worksheet' name='Weather by Crash Type2'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6534,7 +6624,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6547,7 +6637,7 @@
     <window class='worksheet' name='Weather by Crash Type'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6560,12 +6650,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' type='color' />
           </strip>
         </edge>
@@ -6575,7 +6665,7 @@
     <window class='worksheet' name='Weather by Crash Type (2)'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6588,12 +6678,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' type='color' />
           </strip>
         </edge>
@@ -6603,7 +6693,7 @@
     <window class='worksheet' name='Roadway Conditions'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6616,7 +6706,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6629,7 +6719,7 @@
     <window class='worksheet' name='HWY Factors'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6642,7 +6732,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6655,7 +6745,7 @@
     <window class='worksheet' name='Injury/Fatality by Crash Type Scatter'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6668,7 +6758,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6681,7 +6771,7 @@
     <window class='worksheet' name='Total Collision by Quarter/Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6694,7 +6784,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6707,7 +6797,7 @@
     <window class='worksheet' name='Injury Type pie'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6720,12 +6810,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836313513984:qk]' type='size' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Injury_Type:nk]' type='color' />
           </strip>
@@ -6739,7 +6829,7 @@
     <window class='worksheet' name='Sheet 37'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6752,7 +6842,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6765,7 +6855,7 @@
     <window class='worksheet' name='Density Map'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6778,7 +6868,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6816,7 +6906,7 @@
     <window class='worksheet' name='Injury by Total Collision doughnut'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6829,12 +6919,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='1' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Injury_Type:nk]' type='color' />
           </strip>
         </edge>
@@ -6847,7 +6937,7 @@
     <window class='worksheet' name='Injury by Total Collision doughnut by Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6860,7 +6950,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6873,7 +6963,7 @@
     <window class='worksheet' name='Crash Severity Doughnut'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6886,12 +6976,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='1' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' type='color' />
           </strip>
         </edge>
@@ -6904,7 +6994,7 @@
     <window class='worksheet' name='Crash Severity Doughnut by Year'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6917,7 +7007,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
@@ -6930,7 +7020,7 @@
     <window class='worksheet' name='Age by Severity'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6944,12 +7034,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type='color' />
           </strip>
         </edge>
@@ -6959,7 +7049,7 @@
     <window class='worksheet' name='Age by Severity Injury'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -6973,12 +7063,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type='color' />
           </strip>
         </edge>
@@ -6991,7 +7081,7 @@
     <window class='worksheet' name='Age Bar Final'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -7005,12 +7095,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Injury_Type:nk]' type='filter' />
             <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type='color' />
           </strip>
@@ -7024,7 +7114,7 @@
     <window class='worksheet' name='Trend Sheet Final'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -7037,12 +7127,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
             <card mode='compact' param='[Parameters].[Parameter 3]' type='parameter' />
           </strip>
         </edge>
@@ -7052,7 +7142,7 @@
     <window class='worksheet' name='Rolling 12 Month'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -7065,7 +7155,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
