@@ -1,0 +1,2378 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VizInTooltipHideWorksheet />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-on' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='cleaned_traffic_data' inline='true' name='federated.0a38hh21fmnjos13iii5t1t11wo8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_traffic_data' name='textscan.0c09hvx024dcnu1619uj81ly3wfa'>
+            <connection class='textscan' directory='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Analysis' filename='cleaned_traffic_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0c09hvx024dcnu1619uj81ly3wfa' name='Nevada_population_clean_1.csv' table='[Nevada_population_clean_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='integer' name='Population_2015' ordinal='2' />
+            <column datatype='integer' name='Population_2016' ordinal='3' />
+            <column datatype='integer' name='Population_2017' ordinal='4' />
+            <column datatype='integer' name='Population_2018' ordinal='5' />
+            <column datatype='integer' name='Population_2019' ordinal='6' />
+            <column datatype='integer' name='Population_2020' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0c09hvx024dcnu1619uj81ly3wfa' name='cleaned_traffic_data.csv' table='[cleaned_traffic_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='real' name='X' ordinal='0' />
+              <column datatype='real' name='Y' ordinal='1' />
+              <column datatype='integer' name='OBJECTID' ordinal='2' />
+              <column datatype='string' name='Crash_Severity' ordinal='3' />
+              <column datatype='string' name='County' ordinal='4' />
+              <column datatype='string' name='Crash_Date' ordinal='5' />
+              <column datatype='integer' name='Crash_Year' ordinal='6' />
+              <column datatype='string' name='Crash_Time' ordinal='7' />
+              <column datatype='string' name='Primary_Street' ordinal='8' />
+              <column datatype='string' name='Secondary_Street' ordinal='9' />
+              <column datatype='string' name='Weather' ordinal='10' />
+              <column datatype='integer' name='Fatalities' ordinal='11' />
+              <column datatype='integer' name='Injured' ordinal='12' />
+              <column datatype='string' name='Property_Damage_Only' ordinal='13' />
+              <column datatype='string' name='Injury_Type' ordinal='14' />
+              <column datatype='string' name='Crash_Type' ordinal='15' />
+              <column datatype='integer' name='Total_Vehicles' ordinal='16' />
+              <column datatype='string' name='V1_Type' ordinal='17' />
+              <column datatype='integer' name='V1_Driver_Age' ordinal='18' />
+              <column datatype='string' name='V1_Action' ordinal='19' />
+              <column datatype='string' name='V1_Driver_Factors' ordinal='20' />
+              <column datatype='string' name='V1_Driver_Distracted' ordinal='21' />
+              <column datatype='string' name='V1_Vehicle_Factors' ordinal='22' />
+              <column datatype='string' name='V1_Most_Harmful_Event' ordinal='23' />
+              <column datatype='string' name='V1_All_Events' ordinal='24' />
+              <column datatype='string' name='V2_Type' ordinal='25' />
+              <column datatype='integer' name='V2_Driver_Age' ordinal='26' />
+              <column datatype='string' name='V2_Action' ordinal='27' />
+              <column datatype='string' name='V2_Driver_Factors' ordinal='28' />
+              <column datatype='string' name='V2_Driver_Distracted' ordinal='29' />
+              <column datatype='string' name='V2_Vehicle_Factors' ordinal='30' />
+              <column datatype='string' name='V2_Most_Harmful_Event' ordinal='31' />
+              <column datatype='string' name='V2_All_Events' ordinal='32' />
+              <column datatype='string' name='Nonmotorist_Factors' ordinal='33' />
+              <column datatype='string' name='Factors_Roadway' ordinal='34' />
+              <column datatype='string' name='Lighting' ordinal='35' />
+              <column datatype='string' name='HWY_Factors' ordinal='36' />
+              <column datatype='integer' name='Accident_Rec_Num' ordinal='37' />
+              <column datatype='string' name='Pedalcyclist' ordinal='38' />
+              <column datatype='string' name='Pedestrian' ordinal='39' />
+              <column datatype='string' name='Motorcyclist' ordinal='40' />
+              <column datatype='string' name='AnimalType' ordinal='41' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0c09hvx024dcnu1619uj81ly3wfa' name='Nevada_population_clean_1.csv' table='[Nevada_population_clean_1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='County' ordinal='1' />
+              <column datatype='integer' name='Population_2015' ordinal='2' />
+              <column datatype='integer' name='Population_2016' ordinal='3' />
+              <column datatype='integer' name='Population_2017' ordinal='4' />
+              <column datatype='integer' name='Population_2018' ordinal='5' />
+              <column datatype='integer' name='Population_2019' ordinal='6' />
+              <column datatype='integer' name='Population_2020' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Accident_Rec_Num]' value='[cleaned_traffic_data.csv].[Accident_Rec_Num]' />
+          <map key='[AnimalType]' value='[cleaned_traffic_data.csv].[AnimalType]' />
+          <map key='[County (Nevada_population_clean_1.csv)]' value='[Nevada_population_clean_1.csv].[County]' />
+          <map key='[County]' value='[cleaned_traffic_data.csv].[County]' />
+          <map key='[Crash_Date]' value='[cleaned_traffic_data.csv].[Crash_Date]' />
+          <map key='[Crash_Severity]' value='[cleaned_traffic_data.csv].[Crash_Severity]' />
+          <map key='[Crash_Time]' value='[cleaned_traffic_data.csv].[Crash_Time]' />
+          <map key='[Crash_Type]' value='[cleaned_traffic_data.csv].[Crash_Type]' />
+          <map key='[Crash_Year]' value='[cleaned_traffic_data.csv].[Crash_Year]' />
+          <map key='[Factors_Roadway]' value='[cleaned_traffic_data.csv].[Factors_Roadway]' />
+          <map key='[Fatalities]' value='[cleaned_traffic_data.csv].[Fatalities]' />
+          <map key='[HWY_Factors]' value='[cleaned_traffic_data.csv].[HWY_Factors]' />
+          <map key='[ID]' value='[Nevada_population_clean_1.csv].[ID]' />
+          <map key='[Injured]' value='[cleaned_traffic_data.csv].[Injured]' />
+          <map key='[Injury_Type]' value='[cleaned_traffic_data.csv].[Injury_Type]' />
+          <map key='[Lighting]' value='[cleaned_traffic_data.csv].[Lighting]' />
+          <map key='[Motorcyclist]' value='[cleaned_traffic_data.csv].[Motorcyclist]' />
+          <map key='[Nonmotorist_Factors]' value='[cleaned_traffic_data.csv].[Nonmotorist_Factors]' />
+          <map key='[OBJECTID]' value='[cleaned_traffic_data.csv].[OBJECTID]' />
+          <map key='[Pedalcyclist]' value='[cleaned_traffic_data.csv].[Pedalcyclist]' />
+          <map key='[Pedestrian]' value='[cleaned_traffic_data.csv].[Pedestrian]' />
+          <map key='[Population_2015]' value='[Nevada_population_clean_1.csv].[Population_2015]' />
+          <map key='[Population_2016]' value='[Nevada_population_clean_1.csv].[Population_2016]' />
+          <map key='[Population_2017]' value='[Nevada_population_clean_1.csv].[Population_2017]' />
+          <map key='[Population_2018]' value='[Nevada_population_clean_1.csv].[Population_2018]' />
+          <map key='[Population_2019]' value='[Nevada_population_clean_1.csv].[Population_2019]' />
+          <map key='[Population_2020]' value='[Nevada_population_clean_1.csv].[Population_2020]' />
+          <map key='[Primary_Street]' value='[cleaned_traffic_data.csv].[Primary_Street]' />
+          <map key='[Property_Damage_Only]' value='[cleaned_traffic_data.csv].[Property_Damage_Only]' />
+          <map key='[Secondary_Street]' value='[cleaned_traffic_data.csv].[Secondary_Street]' />
+          <map key='[Total_Vehicles]' value='[cleaned_traffic_data.csv].[Total_Vehicles]' />
+          <map key='[V1_Action]' value='[cleaned_traffic_data.csv].[V1_Action]' />
+          <map key='[V1_All_Events]' value='[cleaned_traffic_data.csv].[V1_All_Events]' />
+          <map key='[V1_Driver_Age]' value='[cleaned_traffic_data.csv].[V1_Driver_Age]' />
+          <map key='[V1_Driver_Distracted]' value='[cleaned_traffic_data.csv].[V1_Driver_Distracted]' />
+          <map key='[V1_Driver_Factors]' value='[cleaned_traffic_data.csv].[V1_Driver_Factors]' />
+          <map key='[V1_Most_Harmful_Event]' value='[cleaned_traffic_data.csv].[V1_Most_Harmful_Event]' />
+          <map key='[V1_Type]' value='[cleaned_traffic_data.csv].[V1_Type]' />
+          <map key='[V1_Vehicle_Factors]' value='[cleaned_traffic_data.csv].[V1_Vehicle_Factors]' />
+          <map key='[V2_Action]' value='[cleaned_traffic_data.csv].[V2_Action]' />
+          <map key='[V2_All_Events]' value='[cleaned_traffic_data.csv].[V2_All_Events]' />
+          <map key='[V2_Driver_Age]' value='[cleaned_traffic_data.csv].[V2_Driver_Age]' />
+          <map key='[V2_Driver_Distracted]' value='[cleaned_traffic_data.csv].[V2_Driver_Distracted]' />
+          <map key='[V2_Driver_Factors]' value='[cleaned_traffic_data.csv].[V2_Driver_Factors]' />
+          <map key='[V2_Most_Harmful_Event]' value='[cleaned_traffic_data.csv].[V2_Most_Harmful_Event]' />
+          <map key='[V2_Type]' value='[cleaned_traffic_data.csv].[V2_Type]' />
+          <map key='[V2_Vehicle_Factors]' value='[cleaned_traffic_data.csv].[V2_Vehicle_Factors]' />
+          <map key='[Weather]' value='[cleaned_traffic_data.csv].[Weather]' />
+          <map key='[X]' value='[cleaned_traffic_data.csv].[X]' />
+          <map key='[Y]' value='[cleaned_traffic_data.csv].[Y]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Y]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Y</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash_Severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crash_Severity]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Crash_Severity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash_Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crash_Date]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Crash_Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash_Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Crash_Year]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Crash_Year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash_Time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crash_Time]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Crash_Time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary_Street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Primary_Street]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Primary_Street</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Secondary_Street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Secondary_Street]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Secondary_Street</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Weather</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatalities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fatalities]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Fatalities</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injured</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Injured]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Injured</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property_Damage_Only</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Property_Damage_Only]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Property_Damage_Only</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Injury_Type]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Injury_Type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crash_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crash_Type]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Crash_Type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Vehicles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Vehicles]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Total_Vehicles</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_Type]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Driver_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V1_Driver_Age]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Driver_Age</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Action</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_Action]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Action</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Driver_Factors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_Driver_Factors]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Driver_Factors</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Driver_Distracted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_Driver_Distracted]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Driver_Distracted</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Vehicle_Factors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_Vehicle_Factors]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Vehicle_Factors</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_Most_Harmful_Event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_Most_Harmful_Event]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_Most_Harmful_Event</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V1_All_Events</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V1_All_Events]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V1_All_Events</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_Type]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Type</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Driver_Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[V2_Driver_Age]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Driver_Age</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Action</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_Action]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Action</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Driver_Factors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_Driver_Factors]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Driver_Factors</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Driver_Distracted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_Driver_Distracted]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Driver_Distracted</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Vehicle_Factors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_Vehicle_Factors]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Vehicle_Factors</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_Most_Harmful_Event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_Most_Harmful_Event]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_Most_Harmful_Event</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>V2_All_Events</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[V2_All_Events]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>V2_All_Events</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nonmotorist_Factors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nonmotorist_Factors]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Nonmotorist_Factors</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Factors_Roadway</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Factors_Roadway]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Factors_Roadway</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lighting</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lighting]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Lighting</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HWY_Factors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HWY_Factors]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>HWY_Factors</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident_Rec_Num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Accident_Rec_Num]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Accident_Rec_Num</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pedalcyclist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pedalcyclist]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Pedalcyclist</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pedestrian</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pedestrian]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Pedestrian</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Motorcyclist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Motorcyclist]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>Motorcyclist</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnimalType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AnimalType]</local-name>
+            <parent-name>[cleaned_traffic_data.csv]</parent-name>
+            <remote-alias>AnimalType</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County (Nevada_population_clean_1.csv)]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_2015]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>Population_2015</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_2016</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_2016]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>Population_2016</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_2017</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_2017]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>Population_2017</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_2018</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_2018]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>Population_2018</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_2019</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_2019]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>Population_2019</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population_2020</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population_2020]</local-name>
+            <parent-name>[Nevada_population_clean_1.csv]</parent-name>
+            <remote-alias>Population_2020</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Accident Rec Num' datatype='integer' name='[Accident_Rec_Num]' role='dimension' type='ordinal' />
+      <column caption='Animal Type' datatype='string' name='[AnimalType]' role='dimension' type='nominal' />
+      <column caption='Total Collisions' datatype='integer' name='[Calculation_154811301238898691]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([OBJECTID])' />
+      </column>
+      <column caption='Average Yearly Crashes' datatype='real' name='[Calculation_154811301246636036]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_154811301238898691]/5' />
+      </column>
+      <column caption='County (Nevada population clean 1.csv)' datatype='string' name='[County (Nevada_population_clean_1.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Crash Date' datatype='string' name='[Crash_Date]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Crash Severity' datatype='string' name='[Crash_Severity]' role='dimension' type='nominal' />
+      <column caption='Crash Time' datatype='string' name='[Crash_Time]' role='dimension' type='nominal' />
+      <column caption='Crash Type' datatype='string' name='[Crash_Type]' role='dimension' type='nominal' />
+      <column caption='Crash Year' datatype='integer' name='[Crash_Year]' role='dimension' type='quantitative' />
+      <column caption='Factors Roadway' datatype='string' name='[Factors_Roadway]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+      <column caption='HWY Factors' datatype='string' name='[HWY_Factors]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Injury Type' datatype='string' name='[Injury_Type]' role='dimension' type='nominal' />
+      <column caption='Nonmotorist Factors' datatype='string' name='[Nonmotorist_Factors]' role='dimension' type='nominal' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column caption='Population 2015' datatype='integer' name='[Population_2015]' role='measure' type='quantitative' />
+      <column caption='Population 2016' datatype='integer' name='[Population_2016]' role='measure' type='quantitative' />
+      <column caption='Population 2017' datatype='integer' name='[Population_2017]' role='measure' type='quantitative' />
+      <column caption='Population 2018' datatype='integer' name='[Population_2018]' role='measure' type='quantitative' />
+      <column caption='Population 2019' datatype='integer' name='[Population_2019]' role='measure' type='quantitative' />
+      <column caption='Population 2020' datatype='integer' name='[Population_2020]' role='measure' type='quantitative' />
+      <column caption='Primary Street' datatype='string' name='[Primary_Street]' role='dimension' type='nominal' />
+      <column caption='Property Damage Only' datatype='string' name='[Property_Damage_Only]' role='dimension' type='nominal' />
+      <column caption='Secondary Street' datatype='string' name='[Secondary_Street]' role='dimension' type='nominal' />
+      <column caption='Total Vehicles' datatype='integer' name='[Total_Vehicles]' role='measure' type='quantitative' />
+      <column caption='V1 Action' datatype='string' name='[V1_Action]' role='dimension' type='nominal' />
+      <column caption='V1 All Events' datatype='string' name='[V1_All_Events]' role='dimension' type='nominal' />
+      <column caption='V1 Driver Age' datatype='integer' name='[V1_Driver_Age]' role='measure' type='quantitative' />
+      <column caption='V1 Driver Distracted' datatype='string' name='[V1_Driver_Distracted]' role='dimension' type='nominal' />
+      <column caption='V1 Driver Factors' datatype='string' name='[V1_Driver_Factors]' role='dimension' type='nominal' />
+      <column caption='V1 Most Harmful Event' datatype='string' name='[V1_Most_Harmful_Event]' role='dimension' type='nominal' />
+      <column caption='V1 Type' datatype='string' name='[V1_Type]' role='dimension' type='nominal' />
+      <column caption='V1 Vehicle Factors' datatype='string' name='[V1_Vehicle_Factors]' role='dimension' type='nominal' />
+      <column caption='V2 Action' datatype='string' name='[V2_Action]' role='dimension' type='nominal' />
+      <column caption='V2 All Events' datatype='string' name='[V2_All_Events]' role='dimension' type='nominal' />
+      <column caption='V2 Driver Age' datatype='integer' name='[V2_Driver_Age]' role='measure' type='quantitative' />
+      <column caption='V2 Driver Distracted' datatype='string' name='[V2_Driver_Distracted]' role='dimension' type='nominal' />
+      <column caption='V2 Driver Factors' datatype='string' name='[V2_Driver_Factors]' role='dimension' type='nominal' />
+      <column caption='V2 Most Harmful Event' datatype='string' name='[V2_Most_Harmful_Event]' role='dimension' type='nominal' />
+      <column caption='V2 Type' datatype='string' name='[V2_Type]' role='dimension' type='nominal' />
+      <column caption='V2 Vehicle Factors' datatype='string' name='[V2_Vehicle_Factors]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[X]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Nevada_population_clean_1.csv' datatype='table' name='[__tableau_internal_object_id__].[Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cleaned_traffic_data.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]' role='measure' type='quantitative' />
+      <column-instance column='[Crash_Severity]' derivation='Attribute' name='[attr:Crash_Severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Accident_Rec_Num]' derivation='Count' name='[cnt:Accident_Rec_Num:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Accident_Rec_Num]' derivation='CountD' name='[ctd:Accident_Rec_Num:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Accident_Rec_Num]' derivation='None' name='[none:Accident_Rec_Num:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Crash_Severity]' derivation='None' name='[none:Crash_Severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Crash_Type]' derivation='None' name='[none:Crash_Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Crash_Year]' derivation='None' name='[none:Crash_Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Primary_Street]' derivation='None' name='[none:Primary_Street:nk]' pivot='key' type='nominal' />
+      <column-instance column='[X]' derivation='None' name='[none:X:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Y]' derivation='None' name='[none:Y:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Crash Year)' hidden='true' name='[Action (Crash Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Crash_Year:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Inclusions (Accident Rec Num,Crash Severity,Crash Year,Primary Street)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Accident_Rec_Num:ok]' />
+          <groupfilter function='level-members' level='[none:Crash_Severity:nk]' />
+          <groupfilter function='level-members' level='[none:Crash_Year:ok]' />
+          <groupfilter function='level-members' level='[none:Primary_Street:nk]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Crash Year,X,Y)' hidden='true' name='[Tooltip (Crash Year,X,Y)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Crash_Year:ok]' />
+          <groupfilter function='level-members' level='[none:X:ok]' />
+          <groupfilter function='level-members' level='[none:Y:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:Crash_Severity:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;FATAL CRASH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PROPERTY DAMAGE ONLY&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;INJURY CRASH&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Crash_Severity:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;FATAL CRASH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PROPERTY DAMAGE ONLY&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;INJURY CRASH&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0a38hh21fmnjos13iii5t1t11wo8].[cnt:Accident_Rec_Num:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0a38hh21fmnjos13iii5t1t11wo8].[ctd:Accident_Rec_Num:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Crash_Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;SIDESWIPE - OVERTAKING&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ANGLE&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;REAR TO SIDE&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;NOT REPORTED&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SIDESWIPE, MEETING&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;REAR-END&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BACKING&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;REAR-TO-REAR&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SIDESWIPE, OVERTAKING&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SIDESWIPE - MEETING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;HEAD-ON&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;UNKNOWN&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NON-COLLISION&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Nevada_population_clean_1.csv' id='Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784'>
+            <properties context=''>
+              <relation connection='textscan.0c09hvx024dcnu1619uj81ly3wfa' name='Nevada_population_clean_1.csv' table='[Nevada_population_clean_1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='integer' name='Population_2015' ordinal='2' />
+                  <column datatype='integer' name='Population_2016' ordinal='3' />
+                  <column datatype='integer' name='Population_2017' ordinal='4' />
+                  <column datatype='integer' name='Population_2018' ordinal='5' />
+                  <column datatype='integer' name='Population_2019' ordinal='6' />
+                  <column datatype='integer' name='Population_2020' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='cleaned_traffic_data.csv' id='cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2'>
+            <properties context=''>
+              <relation connection='textscan.0c09hvx024dcnu1619uj81ly3wfa' name='cleaned_traffic_data.csv' table='[cleaned_traffic_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='X' ordinal='0' />
+                  <column datatype='real' name='Y' ordinal='1' />
+                  <column datatype='integer' name='OBJECTID' ordinal='2' />
+                  <column datatype='string' name='Crash_Severity' ordinal='3' />
+                  <column datatype='string' name='County' ordinal='4' />
+                  <column datatype='string' name='Crash_Date' ordinal='5' />
+                  <column datatype='integer' name='Crash_Year' ordinal='6' />
+                  <column datatype='string' name='Crash_Time' ordinal='7' />
+                  <column datatype='string' name='Primary_Street' ordinal='8' />
+                  <column datatype='string' name='Secondary_Street' ordinal='9' />
+                  <column datatype='string' name='Weather' ordinal='10' />
+                  <column datatype='integer' name='Fatalities' ordinal='11' />
+                  <column datatype='integer' name='Injured' ordinal='12' />
+                  <column datatype='string' name='Property_Damage_Only' ordinal='13' />
+                  <column datatype='string' name='Injury_Type' ordinal='14' />
+                  <column datatype='string' name='Crash_Type' ordinal='15' />
+                  <column datatype='integer' name='Total_Vehicles' ordinal='16' />
+                  <column datatype='string' name='V1_Type' ordinal='17' />
+                  <column datatype='integer' name='V1_Driver_Age' ordinal='18' />
+                  <column datatype='string' name='V1_Action' ordinal='19' />
+                  <column datatype='string' name='V1_Driver_Factors' ordinal='20' />
+                  <column datatype='string' name='V1_Driver_Distracted' ordinal='21' />
+                  <column datatype='string' name='V1_Vehicle_Factors' ordinal='22' />
+                  <column datatype='string' name='V1_Most_Harmful_Event' ordinal='23' />
+                  <column datatype='string' name='V1_All_Events' ordinal='24' />
+                  <column datatype='string' name='V2_Type' ordinal='25' />
+                  <column datatype='integer' name='V2_Driver_Age' ordinal='26' />
+                  <column datatype='string' name='V2_Action' ordinal='27' />
+                  <column datatype='string' name='V2_Driver_Factors' ordinal='28' />
+                  <column datatype='string' name='V2_Driver_Distracted' ordinal='29' />
+                  <column datatype='string' name='V2_Vehicle_Factors' ordinal='30' />
+                  <column datatype='string' name='V2_Most_Harmful_Event' ordinal='31' />
+                  <column datatype='string' name='V2_All_Events' ordinal='32' />
+                  <column datatype='string' name='Nonmotorist_Factors' ordinal='33' />
+                  <column datatype='string' name='Factors_Roadway' ordinal='34' />
+                  <column datatype='string' name='Lighting' ordinal='35' />
+                  <column datatype='string' name='HWY_Factors' ordinal='36' />
+                  <column datatype='integer' name='Accident_Rec_Num' ordinal='37' />
+                  <column datatype='string' name='Pedalcyclist' ordinal='38' />
+                  <column datatype='string' name='Pedestrian' ordinal='39' />
+                  <column datatype='string' name='Motorcyclist' ordinal='40' />
+                  <column datatype='string' name='AnimalType' ordinal='41' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[County]' />
+              <expression op='[County (Nevada_population_clean_1.csv)]' />
+            </expression>
+            <first-end-point object-id='cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2' />
+            <second-end-point object-id='Nevada_population_clean_1.csv_9CBE9417D2EB4292897C1C4C7AC3C784' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Nevada_population' inline='true' name='federated.083oj1y1mqnlm31h7jkmu0xtfgsp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Nevada_population' name='textscan.0v6hxuk1gaf1df1f0553j1rw9x27'>
+            <connection class='textscan' directory='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Resources' filename='Nevada_population.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ctyname' datatype='string' name='[CTYNAME]' role='dimension' type='nominal' />
+      <column caption='Popestimate2016' datatype='integer' name='[POPESTIMATE2016]' role='measure' type='quantitative' />
+      <column caption='Popestimate2017' datatype='integer' name='[POPESTIMATE2017]' role='measure' type='quantitative' />
+      <column caption='Popestimate2018' datatype='integer' name='[POPESTIMATE2018]' role='measure' type='quantitative' />
+      <column caption='Popestimate2019' datatype='integer' name='[POPESTIMATE2019]' role='measure' type='quantitative' />
+      <column caption='Popestimate2020' datatype='integer' name='[POPESTIMATE2020]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_ACA76828239D44ABB8C01B1CEBA79F9D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 8' type='sheet' worksheet='# of Crashes' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 8' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='# of Crashes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0a38hh21fmnjos13iii5t1t11wo8'>
+            <column caption='Accident Rec Num' datatype='integer' name='[Accident_Rec_Num]' role='dimension' type='ordinal' />
+            <column caption='Crash Year' datatype='integer' name='[Crash_Year]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Fatalities]' role='measure' type='quantitative' />
+            <column-instance column='[Accident_Rec_Num]' derivation='CountD' name='[ctd:Accident_Rec_Num:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crash_Year]' derivation='None' name='[none:Crash_Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fatalities]' derivation='Sum' name='[sum:Fatalities:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0a38hh21fmnjos13iii5t1t11wo8].[ctd:Accident_Rec_Num:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0a38hh21fmnjos13iii5t1t11wo8].[ctd:Accident_Rec_Num:qk] + [federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk])</rows>
+        <cols>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:qk]</cols>
+      </table>
+      <simple-id uuid='{663E34CA-7D41-4F6E-87C8-7D5A118613D0}' />
+    </worksheet>
+    <worksheet name='Collision Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0a38hh21fmnjos13iii5t1t11wo8'>
+            <column caption='Total Collisions' datatype='integer' name='[Calculation_154811301238898691]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([OBJECTID])' />
+            </column>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Crash Year' datatype='integer' name='[Crash_Year]' role='dimension' type='quantitative' />
+            <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+            <column caption='Primary Street' datatype='string' name='[Primary_Street]' role='dimension' type='nominal' />
+            <column caption='Secondary Street' datatype='string' name='[Secondary_Street]' role='dimension' type='nominal' />
+            <column aggregation='Avg' datatype='real' name='[X]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[Primary_Street]' derivation='Attribute' name='[attr:Primary_Street:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Secondary_Street]' derivation='Attribute' name='[attr:Secondary_Street:nk]' pivot='key' type='nominal' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crash_Year]' derivation='None' name='[none:Crash_Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[X]' derivation='None' name='[none:X:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Y]' derivation='None' name='[none:Y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_154811301238898691]' derivation='User' name='[usr:Calculation_154811301238898691:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]'>
+            <groupfilter function='member' level='[none:Crash_Year:ok]' member='2017' user:ui-action-filter='[Action1_ACA76828239D44ABB8C01B1CEBA79F9D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:County:nk]'>
+            <groupfilter function='member' level='[none:County:nk]' member='&quot;CLARK&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' included-values='in-range'>
+            <min>15</min>
+            <max>64</max>
+          </filter>
+          <slices>
+            <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:County:nk]</column>
+            <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]</column>
+            <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='-12770022.716914797' min='-12865906.146198114' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4345367.93234812' min='4296896.7996271048' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='102' />
+            <format attr='cell-h' value='34' />
+            <format attr='cell' value='34' />
+            <format attr='cell-q' value='170' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' />
+              <size column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' />
+              <tooltip column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' />
+              <tooltip column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[attr:Primary_Street:nk]' />
+              <tooltip column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[attr:Secondary_Street:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Crash Year:&#9;</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:ok]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#787878'>Primary Street:&#9;</run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0a38hh21fmnjos13iii5t1t11wo8].[attr:Primary_Street:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#787878'>Total Collisions:&#9;</run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'><![CDATA[<[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<Sheet name="Sheet 5" maxwidth="300" maxheight="300" filter="<All Fields>">]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]</rows>
+        <cols>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]</cols>
+        <pages>
+          <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{EA7FA635-CC0C-4CE9-9BF3-56EAE9A837DA}' />
+    </worksheet>
+    <worksheet name='Fatalaties Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0a38hh21fmnjos13iii5t1t11wo8'>
+            <column aggregation='CountD' caption='Crash Severity' datatype='string' name='[Crash_Severity]' role='dimension' type='nominal' />
+            <column caption='Crash Year' datatype='integer' name='[Crash_Year]' role='dimension' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[X]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[Crash_Severity]' derivation='None' name='[none:Crash_Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crash_Year]' derivation='None' name='[none:Crash_Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[X]' derivation='None' name='[none:X:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Y]' derivation='None' name='[none:Y:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]'>
+            <groupfilter function='member' level='[none:Crash_Severity:nk]' member='&quot;FATAL CRASH&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='27312692.86540255' min='27194893.011874631' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4352975.1872853655' min='4286404.3608930502' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' />
+              <size column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' />
+              <geometry column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='14.547999382019043' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]</rows>
+        <cols>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]</cols>
+        <pages>
+          <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:ok]</column>
+        </pages>
+        <page-trail-options mark-color='#f28e2b' mark-color-auto='false' />
+      </table>
+      <simple-id uuid='{3425C54F-EEB2-4A3B-8A73-848D6BE82EDE}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0a38hh21fmnjos13iii5t1t11wo8'>
+            <column caption='Total Collisions' datatype='integer' name='[Calculation_154811301238898691]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([OBJECTID])' />
+            </column>
+            <column caption='Crash Type' datatype='string' name='[Crash_Type]' role='dimension' type='nominal' />
+            <column caption='Crash Year' datatype='integer' name='[Crash_Year]' role='dimension' type='quantitative' />
+            <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[X]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[Crash_Type]' derivation='None' name='[none:Crash_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crash_Year]' derivation='None' name='[none:Crash_Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[X]' derivation='None' name='[none:X:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Y]' derivation='None' name='[none:Y:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_154811301238898691]' derivation='User' name='[usr:Calculation_154811301238898691:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Tooltip (Crash Year,X,Y)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Sheet 5]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Crash_Year:ok]' member='2017' />
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:X:ok]' member='-115.181914053' />
+                <groupfilter function='member' level='[none:Y:ok]' member='36.1006341040001' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[Tooltip (Crash Year,X,Y)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]</rows>
+        <cols>[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]</cols>
+      </table>
+      <simple-id uuid='{9298D75F-39E2-4168-8AC5-3BA84305CE2E}' />
+    </worksheet>
+    <worksheet name='Type of Crash'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0a38hh21fmnjos13iii5t1t11wo8'>
+            <column caption='Crash Type' datatype='string' name='[Crash_Type]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='cleaned_traffic_data.csv' datatype='integer' name='[__tableau_internal_object_id__].[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]' role='measure' type='quantitative' />
+            <column caption='Crash Year' datatype='integer' name='[Crash_Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='cleaned_traffic_data.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Crash_Type]' derivation='None' name='[none:Crash_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Crash_Year]' derivation='None' name='[none:Crash_Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]'>
+            <groupfilter function='member' level='[none:Crash_Year:ok]' member='2017' user:ui-action-filter='[Action1_ACA76828239D44ABB8C01B1CEBA79F9D]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[Action (Crash Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='242' />
+            <format attr='cell-h' value='220' />
+            <format attr='cell' value='22' />
+            <format attr='cell-q' value='110' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' />
+              <size column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[__tableau_internal_object_id__].[pcto:cnt:cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2:qk]' />
+              <wedge-size column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[__tableau_internal_object_id__].[cnt:cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2:qk]' />
+              <text column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6591712236404419' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <pages>
+          <column>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{FD70FEFE-0878-4454-9E73-8C072445568F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='' h='98000' id='1' param='https://docs.google.com/presentation/d/e/2PACX-1vT3Rc-NDjeLnX_-fipbZXHjY4JcuYjmdwXWFBW6JBAmpV9dvwLssdwlPuxXF6hOyXgNAFg2lC09GHOA/pub?start=false&amp;loop=false' type-v2='web' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' forceUpdate='' h='98000' id='1' is-fixed='true' param='https://docs.google.com/presentation/d/e/2PACX-1vT3Rc-NDjeLnX_-fipbZXHjY4JcuYjmdwXWFBW6JBAmpV9dvwLssdwlPuxXF6hOyXgNAFg2lC09GHOA/pub?start=false&amp;loop=false' type-v2='web' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8604618-DD3D-4362-A4B0-0A33EB88450F}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 8'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0a38hh21fmnjos13iii5t1t11wo8'>
+        <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+        <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='58875' id='3' name='Collision Map' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39125' id='12' name='# of Crashes' w='54300' x='800' y='59875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39125' id='14' name='Type of Crash' w='28100' x='55100' y='59875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='7000' id='8' mode='checkdropdown' name='Collision Map' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:County:nk]' show-apply='true' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='9' name='Collision Map' pane-specification-id='7' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' type-v2='color' w='16000' x='83200' y='8000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone count='1' h='14250' id='11' name='Collision Map' name1='Type of Crash' synchronized='1' type-v2='currpage' w='16000' x='83200' y='17125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9000' id='13' name='# of Crashes' pane-specification-id='5' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type-v2='color' w='16000' x='83200' y='31375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8725F00B-1C65-438C-900B-B2BA0A8DAD1E}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Data Exporation Phase'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/exploration.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='7' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/exploration.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{42CB8295-F1A4-44B2-BC2B-F9F1DB4F550B}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Data Source'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='' h='98000' id='3' param='https://geohub-ndot.hub.arcgis.com/datasets/NDOT::crashdata-opendata/about' type-v2='web' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='3000' id='5' type-v2='dashboard-object' w='2400' x='0' y='1000'>
+          <button action=''>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{B535B446-38B9-490F-8AD3-CCD94AD6F1CD}&quot; zone-id=&quot;5&quot; zone-ids=[3]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='8' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' forceUpdate='' h='98000' id='3' is-fixed='true' param='https://geohub-ndot.hub.arcgis.com/datasets/NDOT::crashdata-opendata/about' type-v2='web' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{46114C73-AC92-436A-8C85-8581DAB290CE}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Questions'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='98000' id='3' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run bold='true' fontsize='24'>How Can Data Analysis help to prevent Accidents?</run>
+              <run>Æ&#10;&#10;&#10;</run>
+              <run bold='true' fontsize='24'>What trends can be found in the data that lead to increased accidents?</run>
+              <run>Æ&#10;&#10;&#10;</run>
+              <run bold='true' fontsize='24'>Where are the most common areas for Accidents?</run>
+              <run>Æ&#10;&#10;&#10;</run>
+              <run bold='true' fontsize='24'>Are they accidents at all? Or preventable situation that can be avoided?</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='98000' id='3' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontsize='24'>How Can Data Analysis help to prevent Accidents?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run bold='true' fontsize='24'>What trends can be found in the data that lead to increased accidents?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run bold='true' fontsize='24'>Where are the most common areas for Accidents?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run bold='true' fontsize='24'>Are they accidents at all? Or preventable situation that can be avoided?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5D3F1616-1B40-4536-B1EE-468E8E93E53A}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Random Forest'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/random_forest.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='7' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/random_forest.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{28C1A807-D165-478E-AAA8-A6AD1965035B}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Las Vegas Crash Data</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98172' id='9' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='914'>
+            <zone h='5714' id='10' type-v2='title' w='99034' x='483' y='914'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92458' id='7' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='6628'>
+              <zone h='92458' id='1' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='6628'>
+                <zone h='11543' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99034' x='483' y='6628' />
+                <zone h='80915' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99034' x='483' y='18171'>
+                  <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                    <story-points>
+                      <story-point caption='Welcome Page' captured-sheet='Dashboard 1' id='5' />
+                      <story-point caption='What happens in Vegas.' captured-sheet='Vegas!' id='6' />
+                      <story-point caption='Traffic!' captured-sheet='Traffic' id='7' />
+                      <story-point caption='Data Source' captured-sheet='Data Source' id='11' />
+                      <story-point caption='Number of Accidents and Fatalaties' captured-sheet='# of Crashes' id='3' />
+                      <story-point caption='Collision Hot Spots' captured-sheet='Collision Map' id='10'>
+                        <capturedDeltas>
+                          <worksheet name='Collision Map'>
+                            <style delta-type='added'>
+                              <style-rule element='axis'>
+                                <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4340830.4767274428' min='4297525.3880087286' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                                <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='-12788104.546221424' min='-12833796.967152167' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                              </style-rule>
+                            </style>
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                      <story-point caption='Crash Types' captured-sheet='Type of Crash' id='4' />
+                      <story-point caption='Map of Fatalaties' captured-sheet='Fatalaties Map' id='2'>
+                        <capturedDeltas>
+                          <worksheet name='Fatalaties Map'>
+                            <style delta-type='added'>
+                              <style-rule element='axis'>
+                                <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4366134.372946864' min='4269661.5594877573' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                                <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='27311141.168717328' min='27209349.981321797' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                              </style-rule>
+                            </style>
+                          </worksheet>
+                        </capturedDeltas>
+                      </story-point>
+                      <story-point caption='Data Exploration' captured-sheet='Data Exporation Phase' id='12' />
+                      <story-point caption='Random Forest' captured-sheet='Random Forest' id='13' />
+                    </story-points>
+                  </flipboard>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{B5B3772C-B6F1-4A31-B502-15C401D3F054}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Traffic'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/Vegas_Traffic1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/Vegas_Traffic1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5C323D85-76F7-466E-8258-F89314789492}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Vegas!'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/The_Strip1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='21' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/The_Strip1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F69C4C42-E627-4505-B545-9019B8DBB8AF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{225DF3E7-DD4D-4BA3-B68D-59F15B571C4E}' />
+    </window>
+    <window class='worksheet' name='Collision Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:County:nk]' show-apply='true' type='filter' />
+            <card pane-specification-id='7' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' type='color' />
+            <card type='currpage' />
+            <card pane-specification-id='7' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_154811301238898691:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>2020</bucket>
+          </multibucket>
+        </current-page>
+        <zoom type='fit-width' />
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{A0765C00-60A5-4E2D-AFD0-8AB914A8B4C7}' />
+    </window>
+    <window class='worksheet' name='Fatalaties Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' type='filter' />
+            <card type='currpage' />
+            <card pane-specification-id='1' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Severity:nk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>2019</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{5C652E3B-CBC3-4E38-8F71-004C9A2927A7}' />
+    </window>
+    <window class='worksheet' name='# of Crashes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{504EB64D-B4AC-408F-BD57-31FD7E65B359}' />
+    </window>
+    <window class='worksheet' name='Type of Crash'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[__tableau_internal_object_id__].[pcto:cnt:cleaned_traffic_data.csv_4993B01D81FE407D87152E5EE9E172D2:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{078A2A60-FDF0-4412-A8E0-83AFD822F165}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{34825A94-B46D-41F1-9D06-B9B8B9A9BBAA}' />
+    </window>
+    <window class='dashboard' name='Vegas!'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{8210B555-93D9-4410-8591-220FC06B6FBD}' />
+    </window>
+    <window class='dashboard' name='Traffic'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{92A614A3-86D9-4A12-BCB4-A5805ED20008}' />
+    </window>
+    <window class='dashboard' name='Questions'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{B7CB1946-4C62-4F4B-A996-CAA764CCC4EC}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EE9E211B-867C-48AA-B1EB-5F52B4E085AC}' />
+    </window>
+    <window class='dashboard' name='Data Source'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{B535B446-38B9-490F-8AD3-CCD94AD6F1CD}' />
+    </window>
+    <window class='dashboard' name='Data Exporation Phase'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{1118684F-F27E-4910-B3C5-24C22ED969C9}' />
+    </window>
+    <window class='dashboard' name='Random Forest'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{6400CD21-E9B1-4EEE-87DC-A0A27E161236}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 8'>
+      <viewpoints>
+        <viewpoint name='# of Crashes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Collision Map'>
+          <current-page>
+            <multibucket>
+              <bucket>2016</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Type of Crash'>
+          <current-page>
+            <multibucket>
+              <bucket>2016</bucket>
+            </multibucket>
+          </current-page>
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{1B291DC7-BD9E-4581-AF5E-84B0FFE8489B}' />
+    </window>
+  </windows>
+</workbook>
