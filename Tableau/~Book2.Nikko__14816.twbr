@@ -41,8 +41,8 @@
       <column caption='Adjuster' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='250.'>
         <calculation class='tableau' formula='250.' />
       </column>
-      <column alias='Yearly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;year&quot;'>
-        <calculation class='tableau' formula='&quot;year&quot;' />
+      <column alias='Weekly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;week&quot;'>
+        <calculation class='tableau' formula='&quot;week&quot;' />
         <aliases>
           <alias key='&quot;day&quot;' value='Daily' />
           <alias key='&quot;month&quot;' value='Monthly' />
@@ -1164,8 +1164,8 @@
         <column caption='Adjuster' datatype='real' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='250.'>
           <calculation class='tableau' formula='250.' />
         </column>
-        <column alias='Yearly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;year&quot;'>
-          <calculation class='tableau' formula='&quot;year&quot;' />
+        <column alias='Weekly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;week&quot;'>
+          <calculation class='tableau' formula='&quot;week&quot;' />
           <aliases>
             <alias key='&quot;day&quot;' value='Daily' />
             <alias key='&quot;month&quot;' value='Monthly' />
@@ -4941,9 +4941,9 @@
             <column-instance column='[Calculation_649362836313513984]' derivation='User' name='[usr:Calculation_649362836313513984:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[Tooltip (X1,Y1)]'>
-            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Crash Type Bar]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[none:X:ok]' member='-115.296671471' />
-              <groupfilter function='member' level='[none:Y:ok]' member='36.055545608999999' />
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action - Crash Type Bar]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:X:ok]' />
+              <groupfilter function='level-members' level='[none:Y:ok]' />
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Type:nk]'>
@@ -6385,8 +6385,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='-12799859.989090469' min='-12861442.250986749' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4331889.62319584' min='4287590.8794635618' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:X:qk]' field-type='quantitative' max='-12682950.798621442' min='-13011350.583575841' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4447511.4537827251' min='4211279.5021223621' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' max='37.600000000000001' min='0.20000000000000001' num-steps='6' palette='red_gold_10_0' type='interpolated' />
@@ -7432,8 +7432,8 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column alias='Yearly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;year&quot;'>
-              <calculation class='tableau' formula='&quot;year&quot;' />
+            <column alias='Weekly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;week&quot;'>
+              <calculation class='tableau' formula='&quot;week&quot;' />
               <aliases>
                 <alias key='&quot;day&quot;' value='Daily' />
                 <alias key='&quot;month&quot;' value='Monthly' />
@@ -8295,8 +8295,8 @@
         <datasource name='Parameters' />
       </datasources>
       <datasource-dependencies datasource='Parameters'>
-        <column alias='Yearly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;year&quot;'>
-          <calculation class='tableau' formula='&quot;year&quot;' />
+        <column alias='Weekly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;week&quot;'>
+          <calculation class='tableau' formula='&quot;week&quot;' />
           <aliases>
             <alias key='&quot;day&quot;' value='Daily' />
             <alias key='&quot;month&quot;' value='Monthly' />
@@ -8699,8 +8699,8 @@
         <datasource caption='cleaned_traffic_data' name='federated.0a38hh21fmnjos13iii5t1t11wo8' />
       </datasources>
       <datasource-dependencies datasource='Parameters'>
-        <column alias='Yearly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;year&quot;'>
-          <calculation class='tableau' formula='&quot;year&quot;' />
+        <column alias='Weekly' caption='Trend' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;week&quot;'>
+          <calculation class='tableau' formula='&quot;week&quot;' />
           <aliases>
             <alias key='&quot;day&quot;' value='Daily' />
             <alias key='&quot;month&quot;' value='Monthly' />
