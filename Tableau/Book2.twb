@@ -188,7 +188,10 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Y</remote-name>
@@ -200,7 +203,10 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>OBJECTID</remote-name>
@@ -212,7 +218,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Crash_Severity</remote-name>
@@ -227,7 +236,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>County</remote-name>
@@ -242,7 +254,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Crash_Date</remote-name>
@@ -255,7 +270,10 @@
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Crash_Year</remote-name>
@@ -268,7 +286,10 @@
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Crash_Time</remote-name>
@@ -281,7 +302,10 @@
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Primary_Street</remote-name>
@@ -296,7 +320,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Secondary_Street</remote-name>
@@ -311,7 +338,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Weather</remote-name>
@@ -326,7 +356,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Fatalities</remote-name>
@@ -338,7 +371,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Injured</remote-name>
@@ -350,7 +386,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Property_Damage_Only</remote-name>
@@ -365,7 +404,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Injury_Type</remote-name>
@@ -380,7 +422,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Crash_Type</remote-name>
@@ -395,7 +440,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Total_Vehicles</remote-name>
@@ -407,7 +455,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Type</remote-name>
@@ -422,7 +473,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Driver_Age</remote-name>
@@ -434,7 +488,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Action</remote-name>
@@ -449,7 +506,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Driver_Factors</remote-name>
@@ -464,7 +524,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Driver_Distracted</remote-name>
@@ -479,7 +542,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Vehicle_Factors</remote-name>
@@ -494,7 +560,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_Most_Harmful_Event</remote-name>
@@ -509,7 +578,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V1_All_Events</remote-name>
@@ -524,7 +596,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Type</remote-name>
@@ -539,7 +614,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Driver_Age</remote-name>
@@ -551,7 +629,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Action</remote-name>
@@ -566,7 +647,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Driver_Factors</remote-name>
@@ -581,7 +665,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Driver_Distracted</remote-name>
@@ -596,7 +683,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Vehicle_Factors</remote-name>
@@ -611,7 +701,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_Most_Harmful_Event</remote-name>
@@ -626,7 +719,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>V2_All_Events</remote-name>
@@ -641,7 +737,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Nonmotorist_Factors</remote-name>
@@ -656,7 +755,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Factors_Roadway</remote-name>
@@ -671,7 +773,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Lighting</remote-name>
@@ -686,7 +791,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>HWY_Factors</remote-name>
@@ -701,7 +809,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Accident_Rec_Num</remote-name>
@@ -713,7 +824,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pedalcyclist</remote-name>
@@ -728,7 +842,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Pedestrian</remote-name>
@@ -743,7 +860,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Motorcyclist</remote-name>
@@ -758,7 +878,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>AnimalType</remote-name>
@@ -773,7 +896,10 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RUS' />
+<<<<<<< HEAD
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cleaned_traffic_clark_data.csv_3FC010FA1F4140E2B4A76A34C9CB9839]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+=======
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           </metadata-record>
         </metadata-records>
       </connection>
@@ -1129,6 +1255,61 @@
               <bucket>&quot;[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Calculation_649362836329537540:qk]&quot;</bucket>
             </map>
           </encoding>
+<<<<<<< HEAD
+=======
+          <encoding attr='color' field='[none:Crash_Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BACKING&quot;</bucket>
+            </map>
+            <map to='#51b364'>
+              <bucket>&quot;REAR-END&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;REAR-TO-REAR&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SIDESWIPE, OVERTAKING&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;ANGLE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SIDESWIPE, MEETING&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;REAR TO SIDE&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;UNKNOWN&quot;</bucket>
+            </map>
+            <map to='#f0bd27'>
+              <bucket>&quot;NON-COLLISION&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;HEAD-ON&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;SIDESWIPE - OVERTAKING&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Injury_Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;FATAL&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;UNKNOWN&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;SUSPECTED SERIOUS INJURY&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SUSPECTED MINOR INJURY&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSSIBLE INJURY&quot;</bucket>
+            </map>
+          </encoding>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
           <encoding attr='color' field='[none:Crash_Severity:nk]' type='palette'>
             <map to='#4e79a7'>
               <bucket>&quot;FATAL CRASH&quot;</bucket>
@@ -6084,7 +6265,7 @@
             <groupfilter function='level-members' level='[none:Pedestrian:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='quantitative' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' included-values='in-range'>
-            <min>0.20000000000000001</min>
+            <min>0.2</min>
             <max>37.600000000000001</max>
           </filter>
           <filter class='categorical' column='[federated.0a38hh21fmnjos13iii5t1t11wo8].[wd:Crash_Date:ok]'>
@@ -6111,7 +6292,7 @@
             <encoding attr='space' class='0' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Y:qk]' field-type='quantitative' max='4466058.1545053096' min='4169980.2431890783' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
-            <encoding attr='color' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' max='37.600000000000001' min='0.20000000000000001' num-steps='6' palette='red_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0a38hh21fmnjos13iii5t1t11wo8].[usr:Calculation_649362836314058753:qk]' max='37.600000000000001' min='0.2' num-steps='6' palette='red_gold_10_0' type='interpolated' />
           </style-rule>
           <style-rule element='title'>
             <format attr='background-color' value='#b10202' />
@@ -7979,8 +8160,13 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='62' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='84000' id='61' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+=======
+            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/Vegas_Traffic1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8174,8 +8360,13 @@
           </layout-options>
           <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='81' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='84000' id='80' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+=======
+            <zone h='100000' id='75' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='74' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                 <zone h='4444' id='7' type-v2='title' w='89000' x='500' y='889'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -8326,8 +8517,13 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='64' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='84000' id='63' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+=======
+            <zone h='100000' id='58' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='57' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/exploration.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9328,8 +9524,13 @@
           </layout-options>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='90' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='84000' id='89' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+=======
+            <zone h='100000' id='84' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='83' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                 <zone h='6000' id='9' type-v2='title' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9406,7 +9607,11 @@
             <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
             <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
             <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+<<<<<<< HEAD
               <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+=======
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                 <story-points>
                   <story-point caption='Welcome Page' captured-sheet='Dashboard 1' id='5' />
                   <story-point caption='Vegas Baby! Yeah!' captured-sheet='Dashboard 2' id='6' />
@@ -9414,7 +9619,36 @@
                   <story-point caption='Number of Accidents and Fatalaties' captured-sheet='# of Crashes' id='3'>
                     <capturedDeltas>
                       <worksheet name='# of Crashes'>
+<<<<<<< HEAD
                         <selection-collection />
+=======
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:qk]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Crash_Year:qk]</field>
+                                  <field>[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]</field>
+                                  <field>[federated.0a38hh21fmnjos13iii5t1t11wo8].[:Measure Names]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>2016</value>
+                                <value>322</value>
+                                <value>&quot;[federated.0a38hh21fmnjos13iii5t1t11wo8].[sum:Fatalities:qk]&quot;</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                       </worksheet>
                     </capturedDeltas>
                   </story-point>
@@ -9470,8 +9704,13 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
+<<<<<<< HEAD
             <zone h='100000' id='72' type-v2='layout-basic' w='100000' x='0' y='0'>
               <zone h='84000' id='71' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+=======
+            <zone h='100000' id='66' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='65' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/Joe/OneDrive/Desktop/Class/Group Project/Traffic_Analysis/Images/The_Strip1.0.jpg' type-v2='bitmap' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -9530,6 +9769,14 @@
         </edge>
       </cards>
       <viewpoint>
+<<<<<<< HEAD
+=======
+        <current-page>
+          <multibucket>
+            <bucket>2017</bucket>
+          </multibucket>
+        </current-page>
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
         <highlight>
           <color-one-way>
             <field>[federated.0a38hh21fmnjos13iii5t1t11wo8].[none:Accident_Rec_Num:ok]</field>
@@ -9624,7 +9871,11 @@
     </window>
     <window class='dashboard' name='Dashboard 1'>
       <viewpoints />
+<<<<<<< HEAD
       <active id='-1' />
+=======
+      <active id='1' />
+>>>>>>> 5a0e364b34d3f52c83d178f9c00821882a1306e8
       <simple-id uuid='{34825A94-B46D-41F1-9D06-B9B8B9A9BBAA}' />
     </window>
     <window class='dashboard' name='Dashboard 2'>
@@ -10881,7 +11132,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='19' />
       <simple-id uuid='{F82E0461-2AB6-46AF-8751-7F3C518B8540}' />
     </window>
     <window class='worksheet' name='Injury by Total Collision doughnut'>
