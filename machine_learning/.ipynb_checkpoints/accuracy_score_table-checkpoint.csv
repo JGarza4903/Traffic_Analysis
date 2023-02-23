@@ -1,0 +1,7 @@
+﻿Scope,Target,Number of Features,Accuracy Score,Rounded Accuracy Score
+Statewide,Crash Severity,1345,0.740007445,0.74
+Statewide,Crash Severity,773,0.734229044,0.73
+Clark,Crash Severity,1345,0.74116123,0.74
+Statewide,Injury Type,1345,0.656681497,0.66
+Statewide,Injury Type,773,0.65538756,0.66
+Clark,Injury Type,1345,0.646095866,0.65
