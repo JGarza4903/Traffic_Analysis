@@ -35,7 +35,7 @@ We are using Google meet to have in person discussions outside of class time and
 
 After our data cleanup was complete, we created an entity relationship diagram using quickdatabasediagrams.com. 
 
-![ERD](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Images/QuickDBD-export.png)
+![ERD](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Images/QuickDBD-export%20(1).png)
 
 We imported that [schema](https://github.com/JGarza4903/Traffic_Analysis/blob/main/Resources/schema.sql) into pgAdmin4 to create a PostgreSQL database and then loaded our cleaned traffic data and population data into separate tables. Since the database is not hosted, each team member made a local instance of it. 
 
