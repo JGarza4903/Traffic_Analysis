@@ -41,7 +41,7 @@ I created an **Entity Relationship Diagram** (ERD) to plan how data would fit in
 
 ![ERD Diagram](Images/QuickDBD-export(1).png)
 
-A snapshot of the **cleaned crash dataset**, ready for database import.
+A link to the **cleaned crash dataset**, ready for database import.
 
 [Cleaned Traffic Data](Transformations/Nevada_traffic_cleanup.ipynb)
 
