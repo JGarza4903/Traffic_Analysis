@@ -71,13 +71,14 @@ The crash-severity target consistently produced more stable results.
 
 ### Evidence – Machine Learning
 
-![Confusion Matrix – Injury Type](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/confusion_matrix_injury.png)
-
 Confusion matrix from the **injury_type** model — showing performance breakdown.
+[Confusion Matrix – Injury Type](machine_learning/MLM_injury_type.ipynb)
+![Confusion Matrix](machine_learning/injury_type_scores.csv)
 
-![Confusion Matrix – Crash Severity](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/confusion_matrix_severity.png)
 
 Confusion matrix from the **crash_severity** model — clearer separation and higher predictive value.
+[Confusion Matrix – Crash Severity](machine_learning/MLM_injury_type.ipynb)
+![Confusion Matrix](machine_learning/crash_severity_scores.csv)
 
 ---
 
