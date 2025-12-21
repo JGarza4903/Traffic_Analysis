@@ -87,7 +87,7 @@ To communicate patterns and insights, I created Tableau dashboards that put data
 
 ### Evidence – Dashboards
 
-![Dashboard Map](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/dashboard_map.png)
+![Dashboard Map](Images/dashboard_map.png)
 
 This interactive map shows **crash frequency by location** in Las Vegas and surroundings.
 
@@ -113,27 +113,3 @@ Combined charts and filters help explore the patterns in time, severity, and con
 - Choosing and engineering features is as important as choosing the model itself.
 - Database structures make analysis clearer and repeatable.
 - Visual storytelling is essential for communicating insights.
-
----
-
-## Topics & Tags
-`python`  
-`data-analysis`  
-`machine-learning`  
-`predictive-modeling`  
-`postgresql`  
-`sql`  
-`tableau`  
-`etl`  
-`data-visualization`  
-`jupyter-notebook`  
-`traffic-analysis`  
-`public-safety-analytics`  
-
----
-
-## Next Steps
-- integrate external data (weather, traffic counts)
-- experiment with alternative modeling techniques
-- add hyperparameter tuning and cross-validation
-- improve dashboard interactivity with filter actions
