@@ -91,7 +91,7 @@ To communicate patterns and insights, I created Tableau dashboards that put data
 
 This interactive map shows **crash frequency by location** in Las Vegas and surroundings.
 
-![Dashboard Summary](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/dashboard_summary.png)
+![Dashboard Summary](Images/dashboard_2.png)
 
 Combined charts and filters help explore the patterns in time, severity, and contributing conditions.
 
