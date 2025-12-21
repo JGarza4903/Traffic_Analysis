@@ -37,13 +37,13 @@ The source crash dataset came with thousands of records and dozens of fields. Ea
 
 ### Evidence – Data Preparation
 
-![ERD Diagram](Images/QuickDBD-export(1).png)
-
 I created an **Entity Relationship Diagram** (ERD) to plan how data would fit into PostgreSQL tables and relationships.
 
-![Cleaned Traffic Data](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/cleaned_traffic_data.png)
+![ERD Diagram](Images/QuickDBD-export(1).png)
 
 A snapshot of the **cleaned crash dataset**, ready for database import.
+
+![Cleaned Traffic Data](Images/cleaned_traffic_data.png)
 
 ![Cleaned Population Data](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/cleaned_population_data.png)
 
