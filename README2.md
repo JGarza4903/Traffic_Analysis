@@ -43,7 +43,7 @@ I created an **Entity Relationship Diagram** (ERD) to plan how data would fit in
 
 A snapshot of the **cleaned crash dataset**, ready for database import.
 
-![Cleaned Traffic Data](Images/cleaned_traffic_data.png)
+[Cleaned Traffic Data](Transformations/Nevada_traffic_cleanup.ipynb)
 
 ![Cleaned Population Data](https://github.com/JGarza4903/Traffic_Analysis/raw/main/Images/cleaned_population_data.png)
 
