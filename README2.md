@@ -37,7 +37,7 @@ The source crash dataset came with thousands of records and dozens of fields. Ea
 
 ### Evidence – Data Preparation
 
-![ERD Diagram](../Images/QuickDBD-export(1).png)
+![ERD Diagram](Images/QuickDBD-export(1).png)
 
 I created an **Entity Relationship Diagram** (ERD) to plan how data would fit into PostgreSQL tables and relationships.
 
