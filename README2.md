@@ -87,7 +87,7 @@ To communicate patterns and insights, I created Tableau dashboards that put data
 
 ### Evidence – Dashboards
 
-![Dashboard Map](Images/dashboard_map.png)
+![Dashboard Map](Images/dashboard_1.png)
 
 This interactive map shows **crash frequency by location** in Las Vegas and surroundings.
 
