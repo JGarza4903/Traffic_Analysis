@@ -72,13 +72,15 @@ The crash-severity target consistently produced more stable results.
 ### Evidence – Machine Learning
 
 Confusion matrix from the **injury_type** model — showing performance breakdown.
-**Python Notebook:** [Injury_Types.ipynb](machine_learning/MLM_injury_type.ipynb)
-**CSV File:** [Injury_Types.csv](machine_learning/injury_type_scores.csv)
+
+**Python Notebook:** [Injury_Types](machine_learning/MLM_injury_type.ipynb)
+**CSV File:** [Injury_Types](machine_learning/injury_type_scores.csv)
 
 
 Confusion matrix from the **crash_severity** model — clearer separation and higher predictive value.
-[Confusion Matrix – Crash Severity](machine_learning/MLM_injury_type.ipynb)
-[Confusion Matrix](machine_learning/crash_severity_scores.csv)
+
+**Python Notebook:** [Crash Severity](machine_learning/MLM_injury_type.ipynb)
+**CSV File:** [Crash Severity](machine_learning/crash_severity_scores.csv)
 
 ---
 
